@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "191932746274",
+    "firebase_url": "https://jcntvon.firebaseio.com",
+    "project_id": "jcntvon",
+    "storage_bucket": "jcntvon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191932746274:android:8d1252c63b0be2b5",
+        "android_client_info": {
+          "package_name": "kr.co.kodc.jcntv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "191932746274-ujdbllvvp6jr5na3dp159dfel3cd8m0u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMO2YDnFl-ZgeWgRaJYvqX9TRzEjf4q0c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "191932746274-f51amjsjn2636q8kjimjeesdcgh1qnfj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "191932746274-k4shdrinpfs03egpo3jsvrrucrkd7a33.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "kr.co.kodc.jcntv"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
