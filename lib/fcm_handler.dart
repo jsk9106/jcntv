@@ -33,7 +33,7 @@ class FcmHandler {
     );
 
     // foreground 에서의 푸시 알림 표시를 위한 local notification 설정
-    // if(Platform.isAndroid) {
+    if(Platform.isAndroid) {
       FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
       await flutterLocalNotificationsPlugin.resolvePlatformSpecificImplementation<AndroidFlutterLocalNotificationsPlugin>()?.createNotificationChannel(channel);
 
@@ -52,18 +52,18 @@ class FcmHandler {
                 channel.id,
                 channel.name,
                 channelDescription: channel.description,
-                // icon: '@drawable/noti_icon',
-                icon: 'mipmap/ic_launcher',
+                icon: '@drawable/noti_icon',
+                // icon: 'mipmap/ic_launcher',
               ),
-              iOS: const DarwinNotificationDetails(
-                subtitle: 'the subtitle',
-                sound: 'slow_spring_board.aiff',
-              ),
+              // iOS: const DarwinNotificationDetails(
+              //   subtitle: 'the subtitle',
+              //   sound: 'slow_spring_board.aiff',
+              // ),
             ),
           );
         }
       });
-    // }
+    }
 
     if(kDebugMode) print('fcmToken: ${await messaging.getToken()}');
   }
